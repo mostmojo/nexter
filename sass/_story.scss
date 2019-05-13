@@ -5,9 +5,7 @@
 		grid-column: full-start / col-end 4;
 		// as styling is compiled in style.css in css folder, move up to nexter dir with ../ and into /img
 		background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg); 
-		
-
-		
+	
 		display: grid;
 		grid-template-rows: repeat(6, 1fr);
 		grid-template-columns: repeat(6, 1fr);
