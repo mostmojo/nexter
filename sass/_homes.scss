@@ -1,13 +1,12 @@
 .homes {
-  grid-column: center-start / center-end;
-  margin: 15rem 0;
+	grid-column: center-start / center-end;
+	margin: 15rem 0;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem;
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-gap: 7rem;
 }
 
 .home {
-  background-color: $color-grey-light-1;
+	background-color: $color-grey-light-1;
 }
