@@ -292,7 +292,8 @@ body {
   text-align: center; }
   .copyright__link {
     color: #f9f7f6;
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block; }
   .copyright__link:hover, .copyright__link:active {
     background-color: rgba(255, 255, 255, 0.05);
     transform: translateY(-3px); }
