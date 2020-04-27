@@ -34,14 +34,18 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   -ms-grid-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start]
     ([col-start] minmax(min-content, 14rem) [col-end]) [8] [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(-webkit-min-content, 14rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -51,14 +55,12 @@ body {
     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
     -ms-grid-columns: [full-start] minmax(6rem, 1fr) [center-start] ([col-start] minmax(min-content, 14rem) [col-end])
       [8] [center-end] minmax(6rem, 1fr) [full-end];
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
-        8,
-        [col-start] minmax(-webkit-min-content, 14rem) [col-end]
-      ) [center-end] minmax(6rem, 1fr) [full-end];
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
-        8,
-        [col-start] minmax(min-content, 14rem) [col-end]
-      ) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr) [full-end];
   }
 }
 
@@ -68,14 +70,12 @@ body {
     grid-template-rows: 6rem calc(100vh - 6rem);
     -ms-grid-columns: [full-start] minmax(6rem, 1fr) [center-start] ([col-start] minmax(min-content, 14rem) [col-end])
       [8] [center-end] minmax(6rem, 1fr) [full-end];
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
-        8,
-        [col-start] minmax(-webkit-min-content, 14rem) [col-end]
-      ) [center-end] minmax(6rem, 1fr) [full-end];
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
-        8,
-        [col-start] minmax(min-content, 14rem) [col-end]
-      ) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr) [full-end];
   }
 }
 
@@ -272,7 +272,7 @@ body {
 }
 
 .header__logo {
-  height: 3rem;
+  height: 10rem;
   -ms-grid-column-align: center;
   justify-self: center;
 }
